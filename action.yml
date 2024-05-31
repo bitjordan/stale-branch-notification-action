@@ -1,0 +1,11 @@
+name: "Stale Branch Notification"
+description: "Creates a github issue for stale branches"
+author: "bitjordan"
+inputs:
+  daysOld:
+    description: "Number of days old a branch must be to be considered stale"
+    required: true
+    default: "30"
+runs:
+  using: "node20"
+  main: "dist/index.js"
